@@ -1840,13 +1840,13 @@
                                 
                                 <h1 id="excercise-fun-with-strings">Excercise: Fun with Strings</h1>
 <p>Let do a simple challenge using strings.</p>
-<div class="panel panel-primary"><div class="panel-heading"><h3 class="panel-title" id="simple-palendrome-checker"><i class="fa fa-edit"></i> Simple Palendrome Checker</h3></div><div class="panel-body"><p>A <a href="https://en.wikipedia.org/wiki/Palindrome" _target="blank">Palendrome</a> is a word that is spelt the same whether it is written backwards or forwards.  So when you <em>reverse</em> the word it should still look the same.
-Can you write a simple expression to see if a word is a palendrome.</p><pre><code class="lang-eval-clojure">()
+<div class="panel panel-primary"><div class="panel-heading"><h3 class="panel-title" id="simple-palindrome-checker"><i class="fa fa-edit"></i> Simple palindrome Checker</h3></div><div class="panel-body"><p>A <a href="https://en.wikipedia.org/wiki/Palindrome" _target="blank">palindrome</a> is a word that is spelt the same whether it is written backwards or forwards.  So when you <em>reverse</em> the word it should still look the same.
+Can you write a simple expression to see if a word is a palindrome.</p><pre><code class="lang-eval-clojure">()
 </code></pre></div></div>
 <hr>
 <div class="panel panel-success"><div class="panel-heading"><h3 class="panel-title" id="clojurestring-library"><i class="fa fa-lightbulb-o"></i> Clojure.string library</h3></div><div class="panel-body"><p>The <code>clojure.string</code> library has some handy functions for manipulating strings.  Try searching for this library with your favourite browser.</p></div></div>
 <sec data-title="Reveal answer..." data-id="answer001" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Reveal answer...<a class="pull-right section atTitle btn btn-default" target="answer001"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="answer001"><div class="panel-body">
-<p>One possible answer to the simple palendrome exercise</p>
+<p>One possible answer to the simple palindrome exercise</p>
 <pre><code class="lang-clojure">(<span class="hljs-name"><span class="hljs-builtin-name">=</span></span> <span class="hljs-string">&quot;radar&quot;</span> (<span class="hljs-name">clojure.string/reverse</span> <span class="hljs-string">&quot;radar&quot;</span>))
 </code></pre>
 <p>You could also use the generic <code>reverse</code> function, however this returns a list the individual characters in reverse order, rather than reversing the string as a single value.</p>
@@ -1855,7 +1855,7 @@ Can you write a simple expression to see if a word is a palendrome.</p><pre><cod
 (<span class="hljs-name"><span class="hljs-builtin-name">=</span></span> <span class="hljs-string">&quot;radar&quot;</span> (<span class="hljs-name"><span class="hljs-builtin-name">reduce</span></span> str (<span class="hljs-name"><span class="hljs-builtin-name">reverse</span></span> <span class="hljs-string">&quot;radar&quot;</span>)))
 </code></pre>
 <h2 id="bonus-challenge">Bonus challenge</h2>
-<p>For a very tricky bonus, can you make &quot;A man, a plan, a canal, Panama!&quot; work as a palendrome?  This is tricky, so feel free to skip this.</p>
+<p>For a very tricky bonus, can you make &quot;A man, a plan, a canal, Panama!&quot; work as a palindrome?  This is tricky, so feel free to skip this.</p>
 </div></div></div></sec>
  <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/app.klipse.tech/css/codemirror.css"> <script>     window.klipse_settings = {         selector: ".language-klipse, .lang-eval-clojure",         selector_eval_js: ".lang-eval-js",         selector_eval_python_client: ".lang-eval-python",         selector_eval_php: ".lang-eval-php",         selector_eval_scheme: ".lang-eval-scheme",         selector_eval_ruby: ".lang-eval-ruby",         selector_reagent: ".lang-reagent",        selector_google_charts: ".lang-google-chart",        selector_es2017: ".lang-eval-es2017",        selector_jsx: ".lang-eval-jsx",        selector_transpile_jsx: ".lang-transpile-jsx",        selector_render_jsx: ".lang-render-jsx",        selector_react: ".lang-react",        selector_eval_markdown: ".lang-render-markdown",        selector_eval_lambdaway: ".lang-render-lambdaway",        selector_eval_cpp: ".lang-eval-cpp",        selector_eval_html: ".lang-render-html",        selector_sql: ".lang-eval-sql",        selector_brainfuck: "lang-eval-brainfuck",        selector_js: ".lang-transpile-cljs"    }; </script> <script src="https://storage.googleapis.com/app.klipse.tech/plugin/js/klipse_plugin.js"></script>
                                 
